@@ -25,14 +25,11 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
+footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html {
-	line-height: 1;
-}
 body {
-  line-height: inherit;
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
