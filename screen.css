@@ -265,9 +265,6 @@ label + input[type="email"] {
 input[type="checkbox"] + label {
   display: inline;
 }
-
-/* ===== MODULAR STYLES ===== */
-
 form li {
   padding: 0.5em;
 }
@@ -289,6 +286,94 @@ p, h1 {
   font-size: 1.3em;
   font-weight: bold;
   padding: 0.5em;
+}
+
+/* ===== MODULAR STYLES ===== */
+
+/*medium-screens*/
+
+@media screen and (min-width: 668px) {
+  body {
+    background-color: #C0C0C0;
+  }
+  /* email css */
+  #input-email {
+    width: 100%;
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
+    display: block;
+  }
+  label[for=email] {
+    padding-top: 0.809em;
+    padding-bottom: 0.50em;
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+  }
+  #email {
+    width: 80%;
+    padding-top: 0.809em;
+    padding-bottom: 0.50em;
+    display: inline-block;
+  }
+  /* age verification css */
+  #input-age-verification {
+    width: 80%;
+    float: right;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+  }
+  label[for=age-verification] {
+    display: inline-block;
+    text-align: left;
+    width: 86%
+  }
+  #age-verification {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.0em;
+    margin-right: 0.6em;
+    width: 0.75em;
+    height: 1.664em;
+  }
+  /* Small Devices, Phones */
+  @media screen and (max-width: 354px) {
+    h1 {
+      font-size: 1.618em;
+      /* 35.596px @ 22 */
+      line-height: 1.618em;
+      /* 26px / ~ 1.618% */
+      /* ( 26px / 22px = 1.182em ) */
+      font-style: normal;
+      font-weight: normal;
+    }
+    p,
+    label,
+    input {
+      font-size: 0.618em;
+      /* 13px @ 22 */
+      line-height: 1.618em;
+      /* 22px / ~ 1.618% */
+      /* ( 22px / 22px = 1em ) */
+      font-style: normal;
+      font-weight: normal;
+      font-family: "Prata", serif;
+    }
+    #age-verification {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0.0em;
+      margin-right: 0.6em;
+      width: 1.007em;
+      height: 2.007em;
+    }
+  }
+
 }
 
 /* ===== STATE STYLES ======= */
