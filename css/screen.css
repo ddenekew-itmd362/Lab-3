@@ -210,7 +210,7 @@ h1{
   line-height: 1.618em;
   /* 26px / ~ 1.618% */
   text-align: center;
-  font-family: 'Offside', 'Nosifer', cursive;
+  font-family: 'Offside', 'Nosifer';
   text-transform: uppercase;
 }
 
